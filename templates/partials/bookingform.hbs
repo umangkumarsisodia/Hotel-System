@@ -1,0 +1,59 @@
+<div class="container mt-5">
+    <h1 class="text-center">Please fill your details to book your room now</h1>
+    <div class="form-area mt-4">
+        <form action="/booked" method="post">
+            <div class="row g-3">
+                <div class="col-xxl-4 col-sm-12">
+                    <input type="text" name="fname" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col-xxl-4 col-sm-12">
+                    <input type="text" name="mname" class="form-control" placeholder="Middle name" aria-label="Middle name">
+                </div>
+                <div class="col-xxl-4 col-sm-12">
+                    <input type="text" name="lname" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+            </div>
+            <div class="row g-3 mt-2">
+                <div class="col-xxl-4 col-sm-12">
+                    <input type="text" name="aadhar" class="form-control" placeholder="Aadhar no." aria-label="Aadhar no.">
+                </div>
+                <div class="col-xxl-4 col-sm-12">
+                    <input type="email" name="email" class="form-control" placeholder="Email-id" aria-label="Email-id">
+                </div>
+                <div class="col-xxl-4 col-sm-12">
+                    <input type="text" name="phone" class="form-control" placeholder="Phone no." aria-label="Phone no.">
+                </div>
+            </div>
+            <div class="row g-3 mt-2">
+                <div class="col-xxl-6 col-sm-12">
+                    <label for="arrivalDate">Arrival Date</label>
+                    <input type="date" name="arrivalDate" class="form-control" aria-label="arrivalDate">
+                </div>
+                <div class="col-xxl-6 col-sm-12">
+                    <label for="departureDate">Departure Date</label>
+                    <input type="date" name="departureDate" class="form-control" aria-label="departureDate">
+                </div>
+            </div>
+            <div class="row g-3 mt-2">
+                <div class="col-xxl-4 col-sm-12">
+                    <label for="arrivalDate">Address</label>
+                    <textarea rows="10" cols="20" name="address" class="form-control" aria-label="address"></textarea>
+                </div>
+            </div>
+            <div class="row g-3 mt-2">
+                <div class="col-xxl-6 col-sm-12">
+                    <label for="rooms">Total rooms you want</label>
+                    <input type="text" name="rooms" class="form-control" aria-label="rooms">
+                </div>
+                <div class="col-xxl-6 col-sm-12">
+                    <label for="roomType">Room type</label>
+                    <select name="roomType" class="form-select" aria-label="roomType">
+                        <option value="ac">AC</option>
+                        <option value="nac">Non-AC</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger mt-3">Book Now</button>
+        </form>
+    </div>
+</div>

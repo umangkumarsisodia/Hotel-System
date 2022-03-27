@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisodia's Hotel - Booking</title>
+    {{>top}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="container mt-5">
+        <h1 class="text-center">Rooms availability</h1>
+        <div class="row text-center my-4">
+            <div class="col-6">
+                <h3>AC Rooms</h3>
+                <h4>{{ac}}</h4>
+            </div>
+            <div class="col-6">
+                <h3>Non-AC Rooms</h3>
+                <h4>{{nac}}</h4>
+            </div>
+        </div>
+    </div>
+    {{>bookingform}}
+    {{>footer}}
+</body>
+{{>below}}
+</html>

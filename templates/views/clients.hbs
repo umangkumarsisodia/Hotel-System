@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisodia's Hotel - Clients</title>
+    {{>top}}
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Customers List</h1>
+        <table class="table table-bordered text-center">
+            <thead>
+                <th>First name</th>
+                <th>Middle name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Aadhar</th>
+                <th>Address</th>
+                <th>Room Type</th>
+                <th>Total no of rooms</th>
+                <th>Arrival Date</th>
+                <th>Departure Date</th>
+                <th>Booking Date</th>
+            </thead>
+            <tbody>
+                {{#each data}}
+                <tr>
+                    <td>{{this.fname}}</td>
+                    <td>{{this.mname}}</td>
+                    <td>{{this.lname}}</td>
+                    <td>{{this.email}}</td>
+                    <td>{{this.phone}}</td>
+                    <td>{{this.aadhar}}</td>
+                    <td>{{this.address}}</td>
+                    <td>{{this.roomtype}}</td>
+                    <td>{{this.rooms}}</td>
+                    <td>{{this.arrival}}</td>
+                    <td>{{this.departure}}</td>
+                    <td>{{this.bookinDate}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</body>
+{{>below}}
+</html>
